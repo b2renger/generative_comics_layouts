@@ -177,7 +177,7 @@ function generate() {
 }
 
 window.addEventListener("keypress", (evt) => {
-  if (evt.key === 's') saveSvg(svg, "strip " + new Date + ".svg")
+//  if (evt.key === 's') saveSvg(svg, "strip " + new Date + ".svg")
 });
 
 
@@ -218,7 +218,6 @@ function render() {
       if (rand()>obj.holesProbability){
         let node = rc.rectangle(x, y, w, h, {
           roughness: 0,
-          fill: 'rgba(0,0,0,0)',
           disableMultiStroke: true,
           disableMultiStrokeFill: true,
           stroke: 'black'
@@ -231,7 +230,6 @@ function render() {
     else{
       let node = rc.rectangle(x, y, w, h, {
         roughness: 0,
-        fill: 'rgba(0,0,0,0)',
         disableMultiStroke: true,
         disableMultiStrokeFill: true,
         stroke: 'black'
